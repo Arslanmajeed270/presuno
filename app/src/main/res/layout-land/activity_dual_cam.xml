@@ -1,0 +1,120 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="true"
+    android:orientation="horizontal"
+    android:id="@+id/main_container">
+
+    <FrameLayout
+        android:id="@+id/main_camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:screenOrientation="landscape"
+        android:visibility="visible"
+        />
+    <ImageView
+        android:id="@+id/main_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:contentDescription="main Image Preview"
+        tools:ignore="HardcodedText" />
+
+    <FrameLayout
+        android:id="@+id/secondary_camera_preview"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        tools:ignore="RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/secondary_image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        tools:ignore="HardcodedText,RtlHardcoded"
+        android:contentDescription="main Image Preview"
+        android:visibility="invisible"
+        />
+
+    <RelativeLayout
+        android:id="@+id/buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="0dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp">
+
+        <Button
+            android:id="@+id/switch_camera"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Switch camera"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/secondary_on_off"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toStartOf="@+id/switch_camera"
+            android:layout_toLeftOf="@+id/switch_camera"
+            android:text="Secondary On/Off"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/main_on_off"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toStartOf="@+id/secondary_on_off"
+            android:layout_toLeftOf="@+id/secondary_on_off"
+            android:text="Main On/Off"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/upload_secondary_image"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toStartOf="@+id/main_on_off"
+            android:layout_toLeftOf="@+id/main_on_off"
+            android:text="Upload Secondary"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/upload_main_image"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toStartOf="@+id/upload_secondary_image"
+            android:layout_toLeftOf="@+id/upload_secondary_image"
+            android:text="Upload Main"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/move_secondary"
+            android:layout_width="110dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="Move Secondary"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+</FrameLayout>

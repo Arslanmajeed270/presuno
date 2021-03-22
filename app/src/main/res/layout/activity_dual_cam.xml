@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/main_camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:screenOrientation="landscape"
+        android:visibility="visible">
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/secondary_camera_preview"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+        android:id="@+id/switch_camera"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Switch camera" />
+
+    <Button
+        android:id="@+id/secondary_on_off"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="140dp"
+        android:layout_marginBottom="20dp"
+        android:text="Secondary On/Off" />
+
+    <Button
+        android:id="@+id/main_on_off"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="270dp"
+        android:layout_marginBottom="20dp"
+        android:text="Main On/Off" />
+
+    <Button
+        android:id="@+id/move_secondary"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Move Secondary" />
+
+
+</FrameLayout>

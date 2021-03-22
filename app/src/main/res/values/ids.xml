@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="enableCamera" type="id" />
+    <item name="toolbar" type="id" />
+    <item name="FrontCameraPreview" type="id" />
+    <item name="frontPreview" type="id" />
+    <item name="mFrontCamPreview" type="id" />
+    <item name="mFrontCamPreview1" type="id" />
+    <item name="mBackCamPreview" type="id" />
+    <item name="button_start" type="id" />
+    <item name="custom_settings_switch" type="id" />
+    <item name="ivPreview" type="id" />
+    <item name="selectedImage" type="id" />
+    <item name="button3" type="id" />
+</resources>
